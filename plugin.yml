@@ -1,0 +1,13 @@
+name: YetAnotherGrapplingHook
+version: 1.0
+main: com.olliepugh.yetanothergrapplinghook.Main
+author: Ollie Pugh
+api-version: 1.13
+
+commands:
+  ghgive:
+    description: Used for giving grappling hook
+
+permissions:
+  yetanothergrapplinghook.give:
+    description: Allows the player to obtain a grappling hook
