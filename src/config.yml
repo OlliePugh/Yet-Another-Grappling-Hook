@@ -1,1 +1,2 @@
-hookstrength: 2.0
+hook-strength: 2.0 # higher the number the higher the distance pulled
+damage-reduction: 0.3 # 1 = normal fall damage, 0 = no fall damage

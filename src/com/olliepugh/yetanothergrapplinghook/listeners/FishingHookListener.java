@@ -42,8 +42,12 @@ public class FishingHookListener implements Listener{
 			if (hook != null) {
 			    Location hookLocation = hook.getLocation(); // the location of the hook
 			    Location playerLocation = player.getLocation();
-			    Vector newVelocity = (hookLocation.toVector().subtract(playerLocation.toVector())).normalize().multiply(plugin.getConfig().getDouble("hookstrength"));
+			    Vector newVelocity = (hookLocation.toVector().subtract(playerLocation.toVector())).normalize().multiply(plugin.getConfig().getDouble("hook-strength"));
 			    player.setVelocity(newVelocity);
+			    if (!plugin.grapplingPlayers.contains(player)){
+			    	plugin.grapplingPlayers.add(player);
+			    }
+			    
 			} 
 		}
 	}
