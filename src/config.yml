@@ -1,2 +1,5 @@
-hook-strength: 2.0 # higher the number the higher the distance pulled
+horizontal-strength: 2.0 # higher the number the higher the distance pulled
+vertical-strength: 2.0 # higher the number the further the distance pulled
 damage-reduction: 0.3 # 1 = normal fall damage, 0 = no fall damage
+cooldown: 5 # the amount of seconds until the player can grappling hook again
+cooldown-message: You can not use the grappling hook yet!
